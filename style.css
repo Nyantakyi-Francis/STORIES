@@ -1,0 +1,149 @@
+/* style.css */
+
+/* Basic body styling and font import is handled via inline style in HTML for quick setup.
+   This file can be expanded for more complex, custom styles not easily done with Tailwind. */
+
+/* Universal styles for consistent box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-image: url('forest.jpeg'); /* Local image in root folder */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #f8f8f8; /* Fallback background color */
+    overflow-x: hidden; /* Prevent horizontal scroll due to sidebar animation */
+}
+
+/* --- Layout and Sidebar Specific Styles --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Expanded width */
+    height: 100%;
+    background-color: #1a202c; /* bg-gray-900 equivalent */
+    color: #ffffff;
+    padding-top: 5rem; /* Space for header */
+    transform: translateX(-250px); /* Collapsed by default */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it's above other content */
+    overflow-y: auto; /* Enable scrolling for long lists */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.sidebar.is-expanded {
+    transform: translateX(0);
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 1.5rem; /* Adjust as needed to align with header */
+    left: 1.5rem;
+    z-index: 1001; /* Above sidebar */
+    background-color: #2d3748; /* bg-gray-800 equivalent */
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px; /* Full rounded */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    background-color: #4a5568; /* darker hover */
+    transform: scale(1.05);
+}
+
+/* Adjust main content margin when sidebar is expanded */
+main.content-shifted {
+    margin-left: 250px;
+}
+
+/* --- Animations and Transitions --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.nav-link-hover {
+    transition-property: transform, text-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.nav-link-hover:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.button-hover {
+    transition-property: transform, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.button-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #2d3748;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#back-to-top:hover {
+    background-color: #4a5568;
+    transform: translateY(-3px);
+}
+
+/* Story Tile Specifics */
+.story-tile {
+    border: 1px solid #e2e8f0; /* border-gray-200 */
+    border-radius: 0.75rem; /* rounded-xl */
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.story-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.story-tile img {
+    width: 100%;
+    height: 150px; /* Fixed height for image consistency */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 0.75rem 0.75rem 0 0; /* Rounded top corners */
+}
