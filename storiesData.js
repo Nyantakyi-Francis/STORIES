@@ -4,31 +4,31 @@ const storiesData = [
     {
         id: 1,
         title: "The Bat Who Remembered Everything",
-        image: "images/bat.webp",
+        image: "images/the bat.jpg",
         teaser: "A profound tale of memory and its profound weight."
     },
     {
         id: 2,
         title: "The Whispering Woods",
-        image: "images/woods.jpg",
+        image: "images/the woods.jpg",
         teaser: "Secrets carried on the wind through ancient trees."
     },
     {
         id: 3,
         title: "The Journey of the Lost Star",
-        image: "images/stars.jpg",
+        image: "images/the stars.jpg",
         teaser: "A cosmic adventure of self-discovery."
     },
     {
         id: 4,
         title: "Secrets Beneath the Kokroko Bridge",
-        image: "images/bridge.jpg",
+        image: "images/the bridge.jpg",
         teaser: "An urban legend comes to life with a twist."
     },
     {
         id: 5,
         title: "The Tortoise Who Apologized at Sunrise",
-        image: "images/tortoise.jpg",
+        image: "images/the tortoise.jpg",
         teaser: "True strenght is in change."
     },
     {
