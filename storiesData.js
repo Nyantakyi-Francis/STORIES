@@ -34,31 +34,31 @@ const storiesData = [
     {
         id: 6,
         title: "The Last Sunrise",
-        image: "https://placehold.co/400x250/cccccc/000000?text=Story+6",
+        image: "images/sun.jpg",
         teaser: "A poignant story set at the end of an era."
     },
     {
         id: 7,
         title: "A Curious Discovery in the Attic",
-        image: "https://placehold.co/400x250/cccccc/000000?text=Story+7",
+        image: "images/key.jpg",
         teaser: "Old treasures hold new secrets."
     },
     {
         id: 8,
         title: "The Power of a Forgotten Melody",
-        image: "https://placehold.co/400x250/cccccc/000000?text=Story+8",
+        image: "images/melody.jpg",
         teaser: "Music that transcends time and space."
     },
     {
         id: 9,
         title: "Through the Eyes of a Tiny Creature",
-        image: "https://placehold.co/400x250/cccccc/000000?text=Story+9",
+        image: "images/tiny.jpg",
         teaser: "A fresh perspective on a familiar world."
     },
     {
         id: 10,
         title: "An Unexpected Friendship",
-        image: "https://placehold.co/400x250/cccccc/000000?text=Story+10",
+        image: "images/friends.jpg",
         teaser: "Bonds formed in the most unlikely circumstances."
     },
     {
@@ -482,30 +482,349 @@ const fullStoriesContent = {
 </ol>
     `,
     6: `
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">The Last Sunrise</h2>
-        <p class="mb-4 leading-relaxed">In a world where light was fading, a lone figure awaited the final sunrise, pondering its significance.</p>
-        <p class="mb-4 leading-relaxed">The quiet beauty of that moment held both sorrow and an enduring hope.</p>
-    `,
-    7: `
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">A Curious Discovery in the Attic</h2>
-        <p class="mb-4 leading-relaxed">Dusty boxes in a forgotten attic held more than just old belongings; they hid a secret waiting to be found.</p>
-        <p class="mb-4 leading-relaxed">A strange artifact revealed a tale stretching back through generations.</p>
-    `,
-    8: `
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">The Power of a Forgotten Melody</h2>
-        <p class="mb-4 leading-relaxed">An old, unplayed flute held a tune that, when finally sung, awoke dormant magic.</p>
-        <p class="mb-4 leading-relaxed">Its forgotten notes brought harmony and healing to a fractured land.</p>
-    `,
-    9: `
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Through the Eyes of a Tiny Creature</h2>
-        <p class="mb-4 leading-relaxed">A small beetle, often overlooked, saw the world in vibrant, intricate detail.</p>
-        <p class="mb-4 leading-relaxed">Its journey across a single garden was an epic adventure filled with wonder.</p>
-    `,
-    10: `
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">An Unexpected Friendship</h2>
-        <p class="mb-4 leading-relaxed">A fierce wolf and a gentle rabbit, from different worlds, found common ground.</p>
-        <p class="mb-4 leading-relaxed">Their bond proved that true friendship transcends all boundaries.</p>
-    `,
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">The Last Sunrise</h2>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Prologue</h3>
+<p class="mb-4 leading-relaxed">In the heart of pre-colonial Mali, where the Niger River wound like a great serpent through golden savannas, the Kingdom of Wagadu stood as a beacon of wisdom and prosperity. Its great city, Kumbi Saleh, was adorned with towering mud-brick palaces, bustling markets filled with traders from distant lands, and scholars who debated under the shade of ancient baobab trees. But as the winds of time whispered change, the kingdom faced an uncertain future.</p>
+<p class="mb-4 leading-relaxed">This is the story of Sundiata, a young griot-in-training, and his grandfather, Bakari, the last royal storyteller of Wagadu. It is a tale of endings, of legacies, and of the fragile beauty of moments that slip through our fingers like grains of sand.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 1: The Old Griot’s Warning</h3>
+<p class="mb-4 leading-relaxed">The first light of dawn painted the sky in hues of amber and crimson as Sundiata hurried through the quiet streets of Kumbi Saleh. He carried a clay pot of fresh water, a morning ritual for his grandfather, Bakari, who was the most revered griot in the kingdom.</p>
+<p class="mb-4 leading-relaxed">Bakari sat beneath his favorite acacia tree, his deep-set eyes fixed on the horizon. His hands, wrinkled like the bark of an ancient tree, clutched his worn leather-bound book—the chronicle of Wagadu’s kings, warriors, and dreams.</p>
+<p class="mb-4 leading-relaxed">"Grandfather," Sundiata greeted, kneeling beside him. "I brought your water."</p>
+<p class="mb-4 leading-relaxed">Bakari smiled faintly but did not drink. Instead, he pointed eastward. "Do you see that sunrise, boy?"</p>
+<p class="mb-4 leading-relaxed">Sundiata nodded. "It is beautiful."</p>
+<p class="mb-4 leading-relaxed">"It is the last," Bakari murmured.</p>
+<p class="mb-4 leading-relaxed">Sundiata frowned. "What do you mean?"</p>
+<p class="mb-4 leading-relaxed">Bakari sighed, his voice heavy with sorrow. "The winds carry whispers of war. The Songhai grow bolder, and our king refuses to see the storm approaching. The elders say the gods have turned their faces from us."</p>
+<p class="mb-4 leading-relaxed">Sundiata’s heart pounded. "But Wagadu has stood for centuries! Surely we will endure."</p>
+<p class="mb-4 leading-relaxed">Bakari placed a trembling hand on his grandson’s shoulder. "Kingdoms rise and fall like the sun, my child. But what matters is what we leave behind."</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 2: The Fall of the Golden City</h3>
+<p class="mb-4 leading-relaxed">Three nights later, the drums of war echoed across the plains. The Songhai warriors, clad in iron and fury, descended upon Kumbi Saleh like a swarm of locusts. Flames licked the sky as homes and granaries burned. The once-proud streets ran red with blood.</p>
+<p class="mb-4 leading-relaxed">Sundiata, clutching Bakari’s book to his chest, fled through the chaos. His grandfather, too weak to run, had refused to leave his home. "Go, Sundiata!" Bakari had commanded. "Carry our stories. Let them not die with me."</p>
+<p class="mb-4 leading-relaxed">Tears blurred Sundiata’s vision as he reached the city’s edge. He turned back one last time, watching as the great palace of Wagadu crumbled beneath the weight of fire and sword. The last sunrise had indeed come.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 3: The Legacy of Memory</h3>
+<p class="mb-4 leading-relaxed">Years passed. Sundiata wandered from village to village, his voice weaving the tales of Wagadu’s glory and fall. He spoke of King Dinga’s wisdom, Queen Amina’s courage, and Bakari’s unwavering faith in the power of stories.</p>
+<p class="mb-4 leading-relaxed">One evening, as he sat by a campfire, a young girl asked, "Why do you keep telling these stories when Wagadu is gone?"</p>
+<p class="mb-4 leading-relaxed">Sundiata smiled sadly. "Because as long as the stories live, Wagadu never truly dies. A kingdom may fall, but its soul remains in the hearts of those who remember."</p>
+<p class="mb-4 leading-relaxed">The girl nodded, her eyes wide with understanding.</p>
+<p class="mb-4 leading-relaxed">And so, beneath the same stars that once watched over Kumbi Saleh, the griot’s voice carried on—a whisper against the winds of time.</p>
+
+<hr class="my-8 border-gray-300">
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Moral Lessons from The Last Sunrise</h3>
+<ol class="list-decimal list-inside space-y-4 text-gray-700">
+    <li>
+        <p class="font-bold">The Impermanence of Power</p>
+        <p class="ml-4">No kingdom, no matter how mighty, lasts forever. True greatness lies not in eternal rule but in the wisdom and legacy left behind.</p>
+    </li>
+    <li>
+        <p class="font-bold">The Strength of Memory</p>
+        <p class="ml-4">Stories are the threads that weave history together. Even when empires crumble, the tales of their people endure, teaching future generations.</p>
+    </li>
+    <li>
+        <p class="font-bold">Courage in the Face of Change</p>
+        <p class="ml-4">Sundiata did not fight with a sword but with words. In times of upheaval, preserving truth and culture is its own kind of bravery.</p>
+    </li>
+</ol>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Epilogue</h3>
+<p class="mb-4 leading-relaxed">And so, as the sun sets on one era, it rises on another. For as long as there are those who remember, who speak, and who listen—no sunrise is ever truly the last.</p> `,
+    7: `<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">A Curious Discovery in the Attic</h2>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Old Treasures Hold New Secrets</h3>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 1: The Forgotten Box</h3>
+<p class="mb-4 leading-relaxed">The rain drummed steadily against the roof as twelve-year-old Kemi climbed the creaky wooden ladder into her grandmother’s attic. She had been sent up to fetch an old sewing kit, but the moment her flashlight flickered across the dusty space, her curiosity took over.</p>
+<p class="mb-4 leading-relaxed">Trunks filled with faded fabrics, stacks of yellowed newspapers, and an old gramophone with a cracked horn filled the cramped attic. But in the far corner, half-hidden beneath a moth-eaten quilt, was a small wooden chest, its surface carved with strange symbols.</p>
+<p class="mb-4 leading-relaxed">Kemi’s fingers tingled as she pulled it free. The lock was rusted, but with a little force, it snapped open. Inside lay a bundle of letters tied with twine, a tarnished brass key, and—most intriguing of all—a leather-bound journal with the name "Adisa Bello" stamped in gold.</p>
+<p class="mb-4 leading-relaxed">Her great-grandfather’s name.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 2: The Hidden Map</h3>
+<p class="mb-4 leading-relaxed">Kemi flipped through the journal, her pulse quickening. The pages were filled with sketches of plants, star charts, and notes in a mix of Yoruba and English. One entry stood out:</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"If the whispers are true, the lost treasure of King Jaja lies beyond the old baobab near the river bend. But beware—the path is guarded by more than men."</p>
+</blockquote>
+<p class="mb-4 leading-relaxed">A folded map slipped from the back of the journal, its edges brittle with age. Drawn in faded ink was a route leading from her grandmother’s village to a spot deep in the forest.</p>
+<p class="mb-4 leading-relaxed">Kemi’s breath caught. Was this real? A treasure map hidden for decades?</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 3: The Secret of the Brass Key</h3>
+<p class="mb-4 leading-relaxed">Downstairs, Kemi’s grandmother, Mama Nneka, sat in her rocking chair, mending a dress. When Kemi showed her the chest, the old woman’s hands stilled.</p>
+<p class="mb-4 leading-relaxed">"You found Adisa’s things," she murmured, her voice thick with memory.</p>
+<p class="mb-4 leading-relaxed">"Grandma, what is this about a treasure?" Kemi asked.</p>
+<p class="mb-4 leading-relaxed">Mama Nneka sighed. "Your great-grandfather was a scholar, but also a dreamer. He believed in old stories—that before the colonizers came, our people hid sacred artifacts to protect them. He searched for years but never found them."</p>
+<p class="mb-4 leading-relaxed">Kemi held up the brass key. "Then what does this open?"</p>
+<p class="mb-4 leading-relaxed">A slow smile spread across Mama Nneka’s face. "There’s only one way to find out."</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 4: The Journey Begins</h3>
+<p class="mb-4 leading-relaxed">The next morning, Kemi and her grandmother set out for the village, the map and key tucked safely in a satchel. The old baobab tree stood at the edge of the forest, its gnarled roots twisting into the earth like giant fingers.</p>
+<p class="mb-4 leading-relaxed">According to the map, they had to follow the river until they reached a stone marker. But as they walked, Kemi noticed strange carvings on the trees—symbols just like the ones on the chest.</p>
+<p class="mb-4 leading-relaxed">Then, behind a curtain of vines, they found it—a rusted iron door set into a hillside.</p>
+<p class="mb-4 leading-relaxed">Kemi’s hands shook as she inserted the key.</p>
+<p class="mb-4 leading-relaxed">The lock turned with a groan.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 5: The Truth Unearthed</h3>
+<p class="mb-4 leading-relaxed">Inside was not gold or jewels, but something far more precious—shelves lined with ancient books, carved statues, and a chest filled with handwritten scrolls.</p>
+<p class="mb-4 leading-relaxed">Mama Nneka gasped. "These are our stories. Our history."</p>
+<p class="mb-4 leading-relaxed">Kemi realized the truth—this was no ordinary treasure. It was a hidden archive, preserved by their ancestors to protect their culture from those who sought to erase it.</p>
+<p class="mb-4 leading-relaxed">As she carefully lifted a fragile scroll, she understood why Adisa had searched so long.</p>
+<p class="mb-4 leading-relaxed">Some treasures weren’t meant to be spent.</p>
+<p class="mb-4 leading-relaxed">They were meant to be remembered.</p>
+
+<hr class="my-8 border-gray-300">
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Moral Lessons from A Curious Discovery in the Attic</h3>
+<ol class="list-decimal list-inside space-y-4 text-gray-700">
+    <li>
+        <p class="font-bold">The Past Holds Wisdom</p>
+        <p class="ml-4">Forgotten stories and artifacts carry the knowledge of those who came before us. To lose them is to lose a piece of ourselves.</p>
+    </li>
+    <li>
+        <p class="font-bold">True Treasure Isn’t Always Gold</p>
+        <p class="ml-4">The most valuable things are often not material wealth but the legacy of culture, history, and identity.</p>
+    </li>
+    <li>
+        <p class="font-bold">Curiosity Leads to Discovery</p>
+        <p class="ml-4">If Kemi had ignored the chest, the secret would have remained buried forever. Asking questions and seeking answers can unlock incredible truths.</p>
+    </li>
+</ol>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Epilogue</h3>
+<p class="mb-4 leading-relaxed">Years later, Kemi would become a historian, dedicating her life to preserving the stories her great-grandfather had tried so hard to protect.</p>
+<p class="mb-4 leading-relaxed">And every time she opened an old book or held an ancient artifact, she would smile, remembering the day she learned that the greatest treasures are often hidden in plain sight.</p>
+<p class="mb-4 leading-relaxed">The End.</p> `,
+    8: `<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">The Power of a Forgotten Melody</h2>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Music That Transcends Time and Space</h3>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 1: The Silent Violin</h3>
+<p class="mb-4 leading-relaxed">In a small village nestled in the mountains of Oaxaca, twelve-year-old Lucía spent her afternoons wandering the cobblestone streets, listening to the sounds of life around her—the chatter of market vendors, the strumming of guitars from open windows, the distant hum of church bells. But one sound was missing.</p>
+<p class="mb-4 leading-relaxed">Her grandfather, Abuelo Mateo, had once been the most beloved violinist in the region. But after his wife’s passing, he had locked his violin away in its case, and the music had died with her.</p>
+<p class="mb-4 leading-relaxed">One evening, while helping him clean the attic, Lucía found it—a weathered case covered in dust. Inside lay the violin, its wood still warm with memory.</p>
+<p class="mb-4 leading-relaxed">"Abuelo," she whispered, "will you play for me?"</p>
+<p class="mb-4 leading-relaxed">His hands trembled as he touched the instrument. "Some songs are too painful to remember, mija."</p>
+<p class="mb-4 leading-relaxed">But Lucía had heard the whispers in town—that Abuelo Mateo’s music had once been magical, that it could make flowers bloom and tears turn to laughter. She refused to let that magic fade.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 2: The Lost Sheet Music</h3>
+<p class="mb-4 leading-relaxed">Determined to bring back the music, Lucía searched through old trunks and drawers until she found a yellowed envelope tucked inside a book of poetry. Inside were handwritten sheet music pages, the notes delicate as spiderwebs. At the top, in faded ink, was written:</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"La Melodía del Tiempo" – The Melody of Time.</p>
+</blockquote>
+<p class="mb-4 leading-relaxed">That night, she carefully placed the music on Abuelo Mateo’s stand.</p>
+<p class="mb-4 leading-relaxed">"Please," she said. "Just once."</p>
+<p class="mb-4 leading-relaxed">His fingers hesitated over the strings. Then, with a deep breath, he began to play.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 3: A Song That Defied Time</h3>
+<p class="mb-4 leading-relaxed">The moment the first notes filled the air, something strange happened.</p>
+<p class="mb-4 leading-relaxed">The candlelight flickered, though there was no wind. The walls of the house seemed to hum in response. And outside, the villagers stopped in their tracks, their faces turning toward the sound as if pulled by an invisible thread.</p>
+<p class="mb-4 leading-relaxed">Lucía gasped. The music wasn’t just beautiful—it was alive.</p>
+<p class="mb-4 leading-relaxed">As Abuelo Mateo played, the room grew warmer, the shadows dancing along the walls. And then, for the briefest moment, Lucía saw her—Abuela Rosa, standing in the corner, smiling as she had in old photographs.</p>
+<p class="mb-4 leading-relaxed">The song wasn’t just a memory.</p>
+<p class="mb-4 leading-relaxed">It was a bridge.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 4: The Village Remembers</h3>
+<p class="mb-4 leading-relaxed">Word spread quickly. By dawn, neighbors gathered outside the house, their eyes wide with wonder. Some swore they had heard the song in dreams. Others whispered that they felt the presence of loved ones long gone.</p>
+<p class="mb-4 leading-relaxed">An elderly woman, Doña Carmen, clutched Lucía’s hand. "Your grandfather played this at my wedding," she said, tears in her eyes. "I had forgotten… but my heart remembered."</p>
+<p class="mb-4 leading-relaxed">Abuelo Mateo, his own cheeks wet, realized the truth—the melody wasn’t just his. It belonged to everyone who had ever heard it.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 5: The Music Never Dies</h3>
+<p class="mb-4 leading-relaxed">From that day on, the violin no longer stayed silent. Abuelo Mateo taught Lucía to play, and together, they performed La Melodía del Tiempo at festivals, funerals, and celebrations.</p>
+<p class="mb-4 leading-relaxed">And sometimes, when the night was still and the music swelled just right, people swore they could hear echoes of the past—laughter, whispers, the rustle of a skirt—as if time itself had folded to let the lost and the living meet again.</p>
+
+<hr class="my-8 border-gray-300">
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Moral Lessons from The Power of a Forgotten Melody</h3>
+<ol class="list-decimal list-inside space-y-4 text-gray-700">
+    <li>
+        <p class="font-bold">Art Outlives the Artist</p>
+        <p class="ml-4">A song, a story, or a memory can live on long after its creator is gone, touching generations yet to come.</p>
+    </li>
+    <li>
+        <p class="font-bold">Grief Can Be Transformed</p>
+        <p class="ml-4">Pain doesn’t have to silence joy. Sometimes, the very thing that hurts us most can become a way to heal.</p>
+    </li>
+    <li>
+        <p class="font-bold">The Past Is Never Truly Lost</p>
+        <p class="ml-4">As long as we remember, those we love are never gone.</p>
+    </li>
+</ol>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Epilogue</h3>
+<p class="mb-4 leading-relaxed">Years later, when Lucía became a musician herself, she would always end her concerts with La Melodía del Tiempo.</p>
+<p class="mb-4 leading-relaxed">And in the crowd, if someone listened closely, they might hear a second violin—soft, distant, but perfectly in tune.</p>
+<p class="mb-4 leading-relaxed">The End.</p> `,
+    9: `<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Through the Eyes of a Tiny Creature</h2>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">A Fresh Perspective on a Familiar World</h3>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 1: The Fall</h3>
+<p class="mb-4 leading-relaxed">Pip had always been told the world was dangerous.</p>
+<p class="mb-4 leading-relaxed">"Stay close to the nest," his mother had warned, her wings fluttering anxiously. "The sky is full of hawks, the grass hides snakes, and the ground is ruled by giants with thunderous feet."</p>
+<p class="mb-4 leading-relaxed">But Pip was a curious sparrow—too curious. On the morning of his first flight, a gust of wind sent him tumbling from the safety of the oak tree. He hit the earth with a soft thud, his tiny heart pounding.</p>
+<p class="mb-4 leading-relaxed">Above him, the world loomed impossibly large.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 2: A Kingdom of Giants</h3>
+<p class="mb-4 leading-relaxed">The grass was a towering forest. A single dandelion was a golden umbrella. And the ants—oh, the ants!—were an army marching in perfect lines, carrying crumbs twice their size.</p>
+<p class="mb-4 leading-relaxed">Pip had never imagined such wonders.</p>
+<p class="mb-4 leading-relaxed">Then came the footsteps.</p>
+<p class="mb-4 leading-relaxed">Boom. Boom. BOOM.</p>
+<p class="mb-4 leading-relaxed">A shadow fell over him. Pip looked up and froze.</p>
+<p class="mb-4 leading-relaxed">A child.</p>
+<p class="mb-4 leading-relaxed">A human child, with eyes wide and fingers reaching.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 3: An Unlikely Guide</h3>
+<p class="mb-4 leading-relaxed">Just as the giant hand descended, a blur of fur darted between them.</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"Not today, two-legs!" squeaked a voice.</p>
+</blockquote>
+<p class="mb-4 leading-relaxed">A mouse—brown, whiskers twitching—stood defiantly in front of Pip. The child giggled and scampered off.</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"You’re lucky," the mouse said, turning to Pip. "They’re not all so easily scared."</p>
+</blockquote>
+<p class="mb-4 leading-relaxed">"I—I didn’t know mice talked," Pip stammered.</p>
+<p class="mb-4 leading-relaxed">The mouse grinned. "And I didn’t know sparrows listened. Name’s Milo."</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 4: The Hidden World</h3>
+<p class="mb-4 leading-relaxed">Milo became Pip’s guide through the undergrowth. He showed him:</p>
+<ul class="list-disc list-inside mb-6 space-y-2">
+    <li>The Snail Express, where travelers hitched rides on slow-moving shells.</li>
+    <li>The Dewdrop Inn, a spiderweb-turned-tavern where beetles traded gossip.</li>
+    <li>The Great Wall, a crumbling sidewalk crack that marked the edge of safe territory.</li>
+</ul>
+<p class="mb-4 leading-relaxed">But the most astonishing sight? The Feast of the Fallen—a discarded picnic, where crumbs were mountains and a dropped grape was a feast for fifty.</p>
+<p class="mb-4 leading-relaxed">"All this was here?" Pip whispered. "And I never saw it?"</p>
+<p class="mb-4 leading-relaxed">Milo nibbled a cheese bit. "Most creatures only look down when they should look close."</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 5: The Storm and the Lesson</h3>
+<p class="mb-4 leading-relaxed">When rain came, Pip huddled with Milo in a hollow log. Outside, the world roared.</p>
+<p class="mb-4 leading-relaxed">"You’re brave," Pip said. "I’d be terrified down here all the time."</p>
+<p class="mb-4 leading-relaxed">Milo shrugged. "Big or small, danger finds everyone. But so does beauty." He pointed.</p>
+<p class="mb-4 leading-relaxed">Through the rain, a single firefly flickered—a tiny lighthouse in the storm.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 6: Home, Changed</h3>
+<p class="mb-4 leading-relaxed">When the sun returned, Pip’s family found him.</p>
+<p class="mb-4 leading-relaxed">"There you are!" his mother scolded. "We’ve been—goodness, you smell like dirt!"</p>
+<p class="mb-4 leading-relaxed">Pip laughed. He’d return to the skies, but he’d never see the world the same way again.</p>
+<p class="mb-4 leading-relaxed">Because now he knew:</p>
+<p class="mb-4 leading-relaxed">The smallest kingdoms held the grandest adventures.</p>
+
+<hr class="my-8 border-gray-300">
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Moral Lessons</h3>
+<ol class="list-decimal list-inside space-y-4 text-gray-700">
+    <li>
+        <p class="font-bold">Size Doesn’t Measure Worth</p>
+        <p class="ml-4">Greatness exists in the tiniest creatures and moments.</p>
+    </li>
+    <li>
+        <p class="font-bold">Fear Shrinks the World</p>
+        <p class="ml-4">Curiosity reveals wonders hiding in plain sight.</p>
+    </li>
+    <li>
+        <p class="font-bold">We All Have Blind Spots</p>
+        <p class="ml-4">Sometimes you need to land to truly see.</p>
+    </li>
+</ol>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Epilogue</h3>
+<p class="mb-4 leading-relaxed">Years later, when young sparrows asked Pip why he always foraged near the ground, he’d smile.</p>
+<p class="mb-4 leading-relaxed">"Because that’s where the stories are," he’d say.</p>
+<p class="mb-4 leading-relaxed">And if they listened closely, they might hear a faint squeak from below:</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"Tell them about the cheese avalanche of ’23!"</p>
+</blockquote>
+<p class="mb-4 leading-relaxed">The End.</p>`,
+    10: `<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">An Unexpected Friendship</h2>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Bonds Formed in the Most Unlikely Circumstances</h3>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 1: The Assignment</h3>
+<p class="mb-4 leading-relaxed">The moment Mr. Thompson announced the semester project, the groans were audible.</p>
+<p class="mb-4 leading-relaxed">"Pairs?" Tyler muttered, slouching in his seat. "Seriously?"</p>
+<p class="mb-4 leading-relaxed">Across the room, Maya stiffened. She knew what this meant—another partner who would roll their eyes when she organized their notes, sigh when she double-checked their sources, and eventually leave her to do all the work.</p>
+<p class="mb-4 leading-relaxed">But when Mr. Thompson read the pairings, the entire class turned to stare.</p>
+<p class="mb-4 leading-relaxed">"Tyler Nguyen and Maya Patel."</p>
+<p class="mb-4 leading-relaxed">Tyler—star quarterback, king of the senior class.</p>
+<p class="mb-4 leading-relaxed">Maya—valedictorian hopeful, debate team captain.</p>
+<p class="mb-4 leading-relaxed">They had never spoken a word to each other.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 2: The First Clash</h3>
+<p class="mb-4 leading-relaxed">"You’re joking," Tyler said when Maya approached him after class. "Look, no offense, but I don’t do study marathons. Can’t you just—"</p>
+<p class="mb-4 leading-relaxed">"—do all the work myself?" Maya finished, crossing her arms. "Not this time. If we fail, it’s on both of us."</p>
+<p class="mb-4 leading-relaxed">Tyler opened his mouth to argue, but the stubborn set of her jaw stopped him.</p>
+<p class="mb-4 leading-relaxed">Fine. He’d play along—for now.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 3: The Library Incident</h3>
+<p class="mb-4 leading-relaxed">Their first meeting was a disaster.</p>
+<p class="mb-4 leading-relaxed">Maya had color-coded their research. Tyler showed up twenty minutes late, still in gym clothes.</p>
+<p class="mb-4 leading-relaxed">"Dude, just Google it," he said when she handed him a stack of books.</p>
+<p class="mb-4 leading-relaxed">Maya’s eye twitched. "This is a college-level project. You can’t Wikipedia your way through it."</p>
+<p class="mb-4 leading-relaxed">Tyler smirked. "Watch me."</p>
+<p class="mb-4 leading-relaxed">Three hours later, they were still arguing—until the librarian kicked them out for "disturbing the peace."</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 4: The Detention Revelation</h3>
+<p class="mb-4 leading-relaxed">Their second meeting happened in detention—Tyler for skipping practice, Maya for "accidentally" knocking Tyler’s coffee onto his laptop.</p>
+<p class="mb-4 leading-relaxed">(Spoiler: It wasn’t an accident.)</p>
+<p class="mb-4 leading-relaxed">But as they sat in silence, Maya noticed something. Tyler wasn’t scrolling through his phone like she expected. He was sketching—beautifully—in the margins of his notebook.</p>
+<p class="mb-4 leading-relaxed">"You draw?" she blurted.</p>
+<p class="mb-4 leading-relaxed">Tyler slammed the notebook shut. "No."</p>
+<p class="mb-4 leading-relaxed">But Maya had already seen. Intricate cityscapes, portraits so real they looked like photographs.</p>
+<p class="mb-4 leading-relaxed">"Why don’t you take art classes?" she asked.</p>
+<p class="mb-4 leading-relaxed">Tyler’s laugh was bitter. "Yeah, right. My dad would love that."</p>
+<p class="mb-4 leading-relaxed">For the first time, Maya wondered: What pressures did the golden boy of Ridgeview High carry?</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 5: The Compromise</h3>
+<p class="mb-4 leading-relaxed">Their project topic was The Psychology of Perfectionism.</p>
+<p class="mb-4 leading-relaxed">Maya wrote the research. Tyler designed the presentation—his artistic flair turning dry data into something mesmerizing.</p>
+<p class="mb-4 leading-relaxed">And somewhere between late-night texts and shared frustration, they realized:</p>
+<p class="mb-4 leading-relaxed">They weren’t so different after all.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 6: The Fallout</h3>
+<p class="mb-4 leading-relaxed">When Tyler’s dad found out he’d missed football practice for a "stupid school project," the yelling could be heard down the block.</p>
+<p class="mb-4 leading-relaxed">When Maya’s parents saw her B+ on the calculus test—her first non-A—they scheduled a meeting with her teacher.</p>
+<p class="mb-4 leading-relaxed">That night, Tyler texted:</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"This is exhausting."</p>
+</blockquote>
+<p class="mb-4 leading-relaxed">Maya replied:</p>
+<blockquote class="border-l-4 border-gray-400 pl-4 italic my-4 text-gray-600">
+    <p>"Tell me about it."</p>
+</blockquote>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Chapter 7: The Unexpected Defense</h3>
+<p class="mb-4 leading-relaxed">At the Homecoming game, whispers spread when Tyler—usually the life of the party—sat alone, sketching.</p>
+<p class="mb-4 leading-relaxed">"Nguyen’s lost his edge," someone sneered.</p>
+<p class="mb-4 leading-relaxed">Maya, passing by with debate team files, stopped cold.</p>
+<p class="mb-4 leading-relaxed">"Maybe he’s just found himself," she snapped.</p>
+<p class="mb-4 leading-relaxed">The crowd gaped. Tyler stared.</p>
+<p class="mb-4 leading-relaxed">And in that moment, something unspoken passed between them—an understanding.</p>
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 mt-10">Epilogue: The Redefinition</h3>
+<p class="mb-4 leading-relaxed">At graduation, Tyler wore his football jersey over a T-shirt from the art school he’d secretly applied to.</p>
+<p class="mb-4 leading-relaxed">Maya’s valedictorian speech included a line about "the friendships that challenge who we think we’re supposed to be."</p>
+<p class="mb-4 leading-relaxed">They didn’t stay in touch forever. But years later, when Maya saw Tyler’s mural in a downtown gallery, she smiled.</p>
+<p class="mb-4 leading-relaxed">Some bonds, no matter how brief, change everything.</p>
+
+<hr class="my-8 border-gray-300">
+
+<h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">Moral Lessons</h3>
+<ol class="list-decimal list-inside space-y-4 text-gray-700">
+    <li>
+        <p class="font-bold">Labels Lie</p>
+        <p class="ml-4">The person you think you know might surprise you.</p>
+    </li>
+    <li>
+        <p class="font-bold">Pressure Breaks Everyone Differently</p>
+        <p class="ml-4">Even the "perfect" ones are struggling.</p>
+    </li>
+    <li>
+        <p class="font-bold">Growth Requires Discomfort</p>
+        <p class="ml-4">Real change starts when someone challenges your worldview.</p>
+    </li>
+</ol>
+<p class="mb-4 leading-relaxed">The End.</p>`,
     11: `
         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">The Mystery of the Silent Town</h2>
         <p class="mb-4 leading-relaxed">A town shrouded in perpetual silence held a chilling secret within its deserted streets.</p>
