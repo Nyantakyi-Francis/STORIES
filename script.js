@@ -194,3 +194,10 @@ window.onload = function () {
         setupReadAloud();
     }
 };
+
+// Check localStorage for last update time
+const lastUpdate = "2024-06-22"; // Change this when you update the site
+if (localStorage.getItem('lastUpdate') !== lastUpdate) {
+  localStorage.setItem('lastUpdate', lastUpdate);
+  window.location.reload(true); // Force refresh
+}
