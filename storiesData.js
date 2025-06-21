@@ -70,13 +70,13 @@ const storiesData = [
     {
         id: 12,
         title: "When Dreams Become Reality",
-        image: "images/imagination.webp",
+        image: "images/brain.jpg",
         teaser: "A fantastical journey where imagination takes flight."
     },
     {
         id: 13,
         title: "Navigating the Labyrinth of Memory",
-        image: "images/Imagination.webp",
+        image: "images/imagination.jpg",
         teaser: "A psychological dive into the mind's maze."
     },
     {
